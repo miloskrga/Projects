@@ -1,0 +1,91 @@
+*
+{
+    margin: 0px;
+}
+
+body
+{
+    background-color: rgb(78, 78, 201);
+}
+
+a
+{
+    width: 15px;
+    height: 15px;
+}
+
+header nav
+{
+    float: right;
+}
+
+.kuca
+{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#glavni {
+    border: 3px solid black;
+    float: left;
+    font-size: 0;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.img1 {
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+}
+
+#ogr
+{
+    margin-left: 50px;    
+}
+
+#puzla {
+    float: left;
+    margin: 10px;
+    font-size: 5px;
+}
+
+#puzla2 {
+    float: left;
+    margin: 10px;
+    font-size: 5px;
+}
+
+#puzla3 {
+ 
+    float: left;
+}
+
+.img2
+{
+    display: inline-block;
+    margin: 0px;
+}
+
+#sat
+{
+    margin-right: 100px;
+    margin-top: 300px;
+    float: right;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+#poeni
+{
+    margin-top: 400px;
+    float: right;
+    font-size: 40px;
+    color: black;
+}

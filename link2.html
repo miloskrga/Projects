@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//RT-3518/link2.css">
+</head>
+<body>
+    <div class="container">
+        <a href="..//RT-3518/domaci.html"><img src="..//RT-3518/IMG/home.png" alt="home" class="kuca"></a>
+        <img src="..//RT-3518/IMG/21765-sendvici03.jpg" alt="sendvic" class="hrana">
+       
+        <div class="narudzbina">
+        <h2>Narucite hranu</h2>
+        <form action="forma_hrana" id="narudzbina" autocomplete="on" >
+             <label>Ime i prezime:</label> 
+            
+             <input type="text" name="ime" id="ime" autofocus required >
+            
+             <br><br>
+             <label>Adresa za dostavu:</label>
+             <input type="text" name="adresa" id="adresa" required>
+
+             <br><br>
+             <label>Unesite email:</label>
+             <input type="email" name="email" id="email" required>
+            
+             <br><br>
+             <label>Izaberite:</label>
+             <select >
+             <optgroup label="pizza">
+            <option value=“izbor1“ required>Kaprićoza</option>
+             <option value=“izbor2“ required>Margarita</option>
+             <option value=“izbor3“ required>Napolitana</option>
+             <option value=“izbor4“ required> Vezuvio</option>
+             <optgroup label="sendvic">
+             <option value=“izbor5“ required>Sunka</option>
+             <option value=“izbor6“ required>Pecenica</option>
+             <option value=“izbor7“ required>Kulen</option>
+             <option value=“izbor8“ required>Prsuta</option>
+             <optgroup label="paste" disabled>
+             <option value=“izbor9“>Bolonjeze</option>
+             <option value=“izbor10“>Karbonara</option>
+             <option value=“izbor11“>The Saint speciale</option>
+             <option value=“izbor12“>Lazanje Bolonjeze</option>
+             </select>
+    
+             <br><br>
+             
+             <label>Izaberite testo:</label><br>
+             <input type="radio" name="testo"  required>Belo
+             <input type="radio" name="testo"  required>Kukuruzno
+             <input type="radio" name="testo"  required>Integralno
+             
+            
+             <br><br>
+             <label>Izaberite sastojke:</label>
+             <br>
+             <input type="checkbox" value="kecap" id="kecap" name="kecap" >
+             <label>Kecap  </label>
+
+             <input type="checkbox" value="majonez" id="majonez" name="majonez" >
+             <label>Majonez  </label> 
+
+             <input type="checkbox" value="sunka" id="sunka" name="sunka" >
+             <label>Sunka  </label>
+
+             <input type="checkbox" value="mocarela" id="mocarela" name="mocarela" >
+             <label>Mocarela</label>
+            
+             <input type="checkbox" value="sunka" id="pecurke" name="pecurke" >
+             <label>Pečurke</label>
+            
+             <input type="checkbox" value="masline" id="masline" name="masline" >
+             <label>Masline</label>
+        
+             <br><br>
+             <label >Izaberite količinu (max 10):</label>
+             <input type="number" name="broj" id="broj" min="1" max="10" value="1" required>
+            
+             <br><br>
+             <label>Napomena:</label>
+             <textarea type="text" id="napomena"name="napomena" rows="5" cols="40" required>
+             </textarea>
+
+             <br><br>
+             <label>Izaberite vreme:</label>
+             <input type="time" name="vreme" id="vreme" required>
+             <br><br>
+             <label>Unesite kod:</label>
+             <input type="password" id="popust" name="Popust" placeholder="upišite kod za popust." required> 
+             <p id="greska"></p>
+             <br><br>
+             <input type="submit" name="posalji" id="posalji" value="Posalji"> 
+            </form>
+            
+        </div>   
+    </div>
+
+</body>
+</html>

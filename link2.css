@@ -1,0 +1,54 @@
+*
+{
+    margin: 0px;
+}
+
+a
+{
+    width: 15px;
+    height: 15px;
+}
+
+header nav
+{
+    float: right;
+}
+
+.kuca
+{
+    margin-left: 1480px;
+    margin-top: 30px;
+    position: absolute ;
+    float: right;
+}
+.hrana
+{
+    width: 1600px;
+    height: 782px;
+}
+
+h2
+{
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: burlywood;
+    text-shadow: 8px 8px 8px #000000;
+
+}
+
+.container
+{
+    position: relative;
+}
+
+.narudzbina
+{
+    position: absolute;
+    left: 550px;
+    top: 30px;
+    color: rgb(240, 218, 190);
+    text-align: center;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//RT-3518/link3.css">
+    <script>
+        var vreme=10;
+        var broj;
+        var prosla;
+        var brojac=0;
+        var poeni=0;
+
+        function reset_timer(tajmer1)
+        {
+            clearInterval(tajmer1);
+            if(brojac<=9)
+            {
+                for(var i=1;i<=9;i++)
+                {
+                    document.getElementById(i).style.visibility="visible";
+                    document.getElementById(i+10).src="zadatak3/0.png";
+                }
+            }    
+            
+            brojac=0;
+            vreme=10;
+            poeni=0;
+            start();
+        }
+
+        function start()
+        {
+            var tajmer=setInterval(function(){
+            
+            if(brojac==9)
+            {
+                alert('Pobeda');
+                reset_timer(tajmer);
+            }
+
+            document.getElementById("sat").innerHTML=vreme+" s";
+
+            document.getElementById("poeni").innerHTML=poeni+" poena";
+
+            if(vreme==0)
+            {
+                alert('Niste popunili na vreme');
+                reset_timer(tajmer);
+                vreme++;
+            }
+            vreme--;
+            },1000);
+        }
+            
+        function setuj(obj)
+        {
+            obj.style.opacity = 0.7;
+            prosla = obj;
+            broj = obj.alt;
+        }
+
+        function postavi(obj)
+        {
+            if(broj == obj.alt)
+            {
+                var zamena = obj.src;
+                zamena = zamena.replace("0.png", broj + ".png");
+                obj.src = zamena;
+                prosla.style.visibility = "hidden";
+                prosla.style.opacity = 1;
+                brojac++;
+                poeni++;
+            }
+            else 
+            {
+                broj = "0";
+                prosla.style.opacity = 1;
+                poeni--;
+            }
+        }
+    </script>
+</head>
+
+<body onload="start()">
+    
+    <header>
+        <nav>
+            <a href="..//RT-3518/domaci.html"><img src="..//RT-3518/IMG/home.png" alt="home" class="kuca"></a>
+        </nav>
+    </header>
+<div id="ogr">
+    <div id="puzla">
+        <div class="img1"><img id="4" src="zadatak3/4.png" alt="4" onclick="setuj(this)"></div>
+        <div class="img1"><img id="3" src="zadatak3/3.png" alt="3" onclick="setuj(this)"></div>
+        <div class="img1"><img id="7" src="zadatak3/7.png" alt="7" onclick="setuj(this)"></div><br>
+    </div>
+        <div id="glavni">
+            <div class="img"><img id="11" src="zadatak3/0.png" alt="1" onclick="postavi(this)"></div>
+            <div class="img"><img id="12" src="zadatak3/0.png" alt="2" onclick="postavi(this)"></div >
+            <div class="img"><img id="13" src="zadatak3/0.png" alt="3" onclick="postavi(this)"></div><br>
+            <div class="img"><img id="14" src="zadatak3/0.png" alt="4" onclick="postavi(this)"></div>
+            <div class="img"><img id="15" src="zadatak3/0.png" alt="5" onclick="postavi(this)"></div>
+            <div class="img"><img id="16" src="zadatak3/0.png" alt="6" onclick="postavi(this)"></div><br>
+            <div class="img"><img id="17" src="zadatak3/0.png" alt="7" onclick="postavi(this)"></div>
+            <div class="img"><img id="18" src="zadatak3/0.png" alt="8" onclick="postavi(this)"></div>
+            <div class="img"><img id="19" src="zadatak3/0.png" alt="9" onclick="postavi(this)"></div><br>
+        </div>
+        <div id="puzla2">
+            <div class="img1"><img id="5" src="zadatak3/5.png" alt="5" onclick="setuj(this)"></div>
+            <div class="img1"><img id="9" src="zadatak3/9.png" alt="9" onclick="setuj(this)"></div>
+            <div class="img1"><img  id="8" src="zadatak3/8.png" alt="8" onclick="setuj(this)"></div>
+        </div>
+
+        <p id="sat"></p>
+        <p id="poeni"></p>
+    </div>
+   
+    <div id="puzla3">
+        <div class="img2"><img id="2" src="zadatak3/2.png" alt="2" onclick="setuj(this)"></div>
+        <div class="img2"><img id="6" src="zadatak3/6.png" alt="6" onclick="setuj(this)"></div>
+        <div class="img2"><img id="1" src="zadatak3/1.png" alt="1" onclick="setuj(this)"></div><br>
+    </div>
+</div>
+</body>
+</html>

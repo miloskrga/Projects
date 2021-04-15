@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//RT-3518/domaci.css">
+    
+</head>
+<body>
+
+        <header class="heder">
+                <h1>
+                    <div class="div1" id="myDiv" >
+                        <p class="ski">SKI</p>
+                    </div>
+
+                   
+                    <nav class="nav">
+                        <ul>
+                        <input type="checkbox" onclick="myFunction(this)" checked>
+                         <a href="..//RT-3518/link1.html" class="btn">Link1</a>
+                         <a href="..//RT-3518/link2.html" class="btn">Link2</a>
+                         <a href="..//RT-3518/link3.html" class="btn" id="krajnji">Link3</a>
+                        </ul>
+                     </nav>
+                </h1>
+        </header>
+
+        <script>         
+
+                function myFunction(x) 
+                {
+
+                   if(x.checked==true)
+                   {
+                        document.getElementById("myDiv").style. backfaceVisibility ="visible";
+                   }
+                   else 
+                    {
+                        document.getElementById("myDiv").style. backfaceVisibility ="hidden";
+                    } 
+                }
+        </script>
+
+
+        <section>
+            <h2>Podaci</h2>
+           <div class="opis">
+               <p class="omeni">
+                   Student :Milos Krga
+                   <br>
+                   Smer :RT
+                   <br>
+                   Broj indeksa :35
+                   <br>
+                   Godina upisa :2018
+                   <br>
+                   Godina rodjenja:1998.
+
+                </p>
+           </div>
+        </section>
+
+        <article> 
+            <h2 id="umotvorine">Umotvorine</h2>
+            <p id="prvi"></p>
+         
+            <script>
+
+                setTimeout(moja,0);
+                setInterval(moja,1000);
+                var i=0;
+                function moja()
+                {
+                    i++;
+                    switch(i)
+                    {
+                        case 1:document.getElementById("prvi").innerHTML="Ko laže za tebe, lagaće i protiv tebe.";
+                        break;
+                        case 2:document.getElementById("prvi").innerHTML="Ko mnogo priča, ili sve zna, ili sve laže.";
+                        break;
+                        case 3: document.getElementById("prvi").innerHTML="Gvožđe se kuje dok je vruće.";
+                        break;
+                        case 4:document.getElementById("prvi").innerHTML="Kad čovjek tone i za vrelo grožđe se hvata.";
+                        break;
+                        case 5: document.getElementById("prvi").innerHTML="Vatra i voda dobre su sluge, ali zli gospodari.";
+                        i=0;
+                        break;
+                    }
+                }
+            </script>
+        </article>
+        <footer>
+            <p class="fut">&copy; Milos Krga 2020.god.</p>
+        </footer>
+        
+</body>
+</html>
+
